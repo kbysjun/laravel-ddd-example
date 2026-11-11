@@ -1,6 +1,6 @@
 # セキュリティ
 
-脆弱性の報告に実際のトークン、個人情報、本番設定を含めないでください。公開前に GitHub の Private vulnerability reporting を有効にし、そこから報告できるようにしてください。現時点では窓口は未設定です。
+脆弱性の報告に実際のトークン、個人情報、本番設定を含めないでください。GitHubの [非公開の脆弱性報告窓口](https://github.com/kbysjun/laravel-ddd-example/security/advisories/new) から報告してください。Private vulnerability reportingを有効化しています。公開Issueには脆弱性の詳細を書かないでください。
 
 このリポジトリは学習用です。本番導入では HTTPS、秘密管理、監査ログ、トークン失効運用、利用規約・プライバシーポリシー、バックアップを別途設計してください。Docker内のパスワードはローカル専用です。
 
