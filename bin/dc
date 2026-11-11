@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+
+# Resolve all Compose paths relative to this repository, not the caller's cwd.
+PROJECT_ROOT=$(CDPATH= cd -P "$(dirname "$0")/.." && pwd)
+exec docker compose --project-directory "$PROJECT_ROOT" --file "$PROJECT_ROOT/compose.yaml" "$@"
